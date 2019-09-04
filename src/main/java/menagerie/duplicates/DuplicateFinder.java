@@ -1,11 +1,9 @@
 package menagerie.duplicates;
 
-import menagerie.MenageriePlugin;
-
 import java.io.File;
 import java.util.List;
 
-public interface DuplicateSearcher extends MenageriePlugin {
+public interface DuplicateFinder {
 
     List<Match> getMatchesFor(File file);
 
