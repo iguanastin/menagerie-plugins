@@ -6,9 +6,9 @@ public interface MenageriePlugin {
 
     boolean removeErrorListener(ErrorListener listener);
 
-    void postExceptionToListeners(Exception e);
-
     void postMessageToListeners(String msg);
+
+    void postErrorToListeners(String msg, Exception e);
 
     String getPluginName();
 

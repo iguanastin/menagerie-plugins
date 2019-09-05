@@ -4,6 +4,6 @@ public interface ErrorListener {
 
     void postMessage(String msg);
 
-    void postException(Exception e);
+    void postException(String msg, Exception e);
 
 }
